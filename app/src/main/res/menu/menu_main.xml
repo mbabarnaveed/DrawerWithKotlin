@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_camera_alt_black_24dp"
+            android:title="@string/camera" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_photo_black_24dp"
+            android:title="@string/gallery" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="Send" />
+        </menu>
+    </item>
+<!--    <group android:id="@+id/five">
+        <item
+            android:id="@+id/nav_annual_report"
+            android:icon="@drawable/menu_annual_report"
+            android:title="@string/annual_report" />
+    </group>-->
+    <!--<group android:id="@+id/seven">
+        <item
+            android:id="@+id/nav_menu_setting"
+            android:icon="@drawable/menu_settings"
+            android:title="@string/menu_setting" />
+    </group>
+
+    <group android:id="@+id/eight">
+        <item
+            android:id="@+id/nav_menu_logout"
+            android:icon="@drawable/menu_logout"
+            android:title="@string/menu_logout" />
+    </group>-->
+
+
+
+</menu>
