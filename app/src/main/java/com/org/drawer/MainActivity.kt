@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
      *
      */
     private fun closeDrawer(){
-        drawer_layout.closeDrawer(GravityCompat.END)
+        drawer_layout.closeDrawer(GravityCompat.START)
     }
 
     /**
@@ -119,14 +119,14 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
      *
      */
     private fun isOpenDrawer(): Boolean{
-        return drawer_layout.isDrawerOpen(GravityCompat.END)
+        return drawer_layout.isDrawerOpen(GravityCompat.START)
     }
 
     /**
      *
      */
     private fun isDrawerVisible(): Boolean{
-        return drawer_layout.isDrawerVisible(GravityCompat.END)
+        return drawer_layout.isDrawerVisible(GravityCompat.START)
     }
 
     /**
