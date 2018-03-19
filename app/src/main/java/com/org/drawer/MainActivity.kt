@@ -96,10 +96,38 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
             }
 
         }
-        drawer_layout.closeDrawer(GravityCompat.START)
+        closeDrawer()
         return true
     }
 
+
+    /**
+     *
+     */
+    private fun closeDrawer(){
+        drawer_layout.closeDrawer(GravityCompat.END)
+    }
+
+    /**
+     *
+     */
+    private fun openDrawer(){
+        drawer_layout.openDrawer(GravityCompat.START)
+    }
+
+    /**
+     *
+     */
+    private fun isOpenDrawer(): Boolean{
+        return drawer_layout.isDrawerOpen(GravityCompat.END)
+    }
+
+    /**
+     *
+     */
+    private fun isDrawerVisible(): Boolean{
+        return drawer_layout.isDrawerVisible(GravityCompat.END)
+    }
 
     /**
      * This method apply the custom font on Drawer text view.
@@ -137,8 +165,8 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
     }
 
     override fun onBackPressed() {
-        if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
-            drawer_layout.closeDrawer(GravityCompat.START)
+        if (isOpenDrawer()) {
+            closeDrawer()
         } else {
             super.onBackPressed()
         }
